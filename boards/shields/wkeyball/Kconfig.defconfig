@@ -1,0 +1,16 @@
+if SHIELD_WKEYBALL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "wkeyball"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_WKEYBALL_LEFT
+
+if SHIELD_WKEYBALL_LEFT || SHIELD_WKEYBALL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_WKEYBALL_LEFT || SHIELD_WKEYBALL_RIGHT
